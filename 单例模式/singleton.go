@@ -21,11 +21,49 @@ var (
 	once     sync.Once
 )
 
-// GetInstance 用于获取单例模式对象
-func GetInstance() Singleton {
+// goer常用方式
+func GetSingleton() Singleton {
 	once.Do(func() {
 		instance = &singleton{}
 	})
 
 	return instance
 }
+
+// 饿汉
+//var instance = &singleton{}
+//func GetSingleton() *singleton {
+//	return instance
+//}
+
+// 懒汉
+//func GetSingleton() *singleton {
+//	if instance == nil {
+//		instance = &singleton{}
+//	}
+//	return instance
+//}
+
+// 支持并发的方式
+//var mu sync.Mutex
+//func GetSingleton() *singleton {
+//	mu.Lock()
+//	defer mu.Unlock()
+//	if instance == nil {
+//		instance = &singleton{}
+//	}
+//	return instance
+//}
+
+// 双重锁定
+//var mu sync.Mutex
+//func GetSingleton() *singleton {
+//	if instance == nil {
+//		mu.Lock()
+//		defer mu.Unlock()
+//		if instance == nil {
+//			instance = &singleton{}
+//		}
+//	}
+//	return instance
+//}
