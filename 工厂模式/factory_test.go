@@ -19,8 +19,8 @@ func TestFactoryMethod(t *testing.T) {
 func TestAbstractFactoryMethod(t *testing.T) {
 	haidian := HaidianShop2{}
 	caoyang := CaoyangShop2{}
-	haidian.GenerateSucaiDumpling().Create()
-	haidian.GenerateSanxianDumpling().Create()
-	caoyang.GenerateSucaiDumpling().Create()
-	caoyang.GenerateSanxianDumpling().Create()
+	haidian.GenerateSucaiDumpling().Create2()
+	haidian.GenerateSanxianDumpling().Create2()
+	caoyang.GenerateSucaiDumpling().Create2()
+	caoyang.GenerateSanxianDumpling().Create2()
 }

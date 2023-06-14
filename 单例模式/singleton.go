@@ -21,7 +21,7 @@ var (
 	once     sync.Once
 )
 
-// goer常用方式
+// GetSingleton goer常用方式
 func GetSingleton() Singleton {
 	once.Do(func() {
 		instance = &singleton{}
