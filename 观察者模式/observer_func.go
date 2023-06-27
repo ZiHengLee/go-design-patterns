@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-//现在实现一个更复杂的观察者模式，观察者本身并不一定是接口对象，可以是任何类型的数据
+//现在实现一个异步的观察者模式，观察者本身并不一定是接口对象，可以是任何类型的数据
 
 type Bus interface {
 	Subscribe(op string, handler interface{}) error
