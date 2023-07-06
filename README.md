@@ -10,6 +10,7 @@
 #### 结构型
 [装饰器模式](https://github.com/ZiHengLee/go-design-patterns/blob/main/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/README.md)
 [组合模式](https://github.com/ZiHengLee/go-design-patterns/blob/main/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/README.md)
+[桥接模式](https://github.com/ZiHengLee/go-design-patterns/tree/main/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F)
 
 #### 行为型
 [观察者模式](https://github.com/ZiHengLee/go-design-patterns/blob/main/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/README.md)
